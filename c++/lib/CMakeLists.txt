@@ -204,7 +204,7 @@ if(WITH_ONNXRUNTIME)
 endif()
 
 if(NOT WIN32)
-  set(EXTERNAL_LIB "-lrt -ldl -lpthread")
+  set(EXTERNAL_LIB "-ldl -lpthread")
   set(DEPS
       ${DEPS}
       ${MATH_LIB}
