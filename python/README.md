@@ -8,14 +8,16 @@
 ├── advanced
 │   ├── share_external_data       share_external_data 预测样例
 │   ├── multi_thread              多线程 预测样例
-│   └── custom_operator           自定义算子 样例      
+│   ├── custom_operator           自定义算子 样例
+│   └── tensorrt_precision_debug  Paddle-TensorRT 精度调试工具 使用样例     
 ├── cpu
 │   ├── resnet50                  单输入模型 oneDNN/OnnxRuntime 预测样例
 │   └── yolov3                    多输入模型 oneDNN/OnnxRuntime 预测样例
 ├── gpu
 │   ├── resnet50                  单输入模型 原生gpu/gpu混合精度推理/Trt_fp32/Trt_fp16/Trt_int8/Trt_dynamic_shape 预测样例
 │   ├── yolov3                    多输入模型 原生gpu/gpu混合精度推理/Trt_fp32/Trt_fp16/Trt_int8/Trt_dynamic_shape 预测样例
-│   └── tuned_dynamic_shape       Trt动态shape自动推导 预测样例
+│   ├── tuned_dynamic_shape       Trt动态shape自动推导 预测样例
+│   └── ernie-varlen              ernie 变长预测样例
 └── mixed
     ├── ELMo                      ELMo 预测样例
     ├── mask_detection            口罩检测 预测样例
