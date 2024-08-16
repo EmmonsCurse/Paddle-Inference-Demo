@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(cpp_inference_demo CXX C CUDA)
+project(cpp_inference_demo CXX C)
 
 option(WITH_MKL "Compile demo with MKL/OpenBlas support, default use MKL." ON)
 option(WITH_GPU "Compile demo with GPU/CPU, default use CPU." OFF)
@@ -219,7 +219,7 @@ if(WITH_ONNXRUNTIME)
 endif()
 
 if(NOT WIN32)
-  set(EXTERNAL_LIB "-lrt -ldl -lpthread")
+  set(EXTERNAL_LIB "-ldl -lpthread")
   set(DEPS
       ${DEPS}
       ${MATH_LIB}
